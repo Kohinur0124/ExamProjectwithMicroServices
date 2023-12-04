@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9340311F-AB13-4E2B-9876-40703FED9D2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YandexTaxiFolder", "YandexTaxiFolder", "{61CB9DA9-6EA0-4D94-8DFA-BBB0DBFEFE61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexTaxi.API", "src\YandexTaxiFolder\YandexTaxi.API\YandexTaxi.API.csproj", "{A14BCCFF-1C39-4875-ADE8-189EE089BB19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YandexEatsFolder", "YandexEatsFolder", "{7E5ED8A8-188A-4071-A9FA-583FFA41206F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexEats.API", "src\YandexEatsFolder\YandexEats.API\YandexEats.API.csproj", "{12FBD5BB-1AB1-40FC-8B65-683B00B7E8F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OlxFolder", "OlxFolder", "{00E8F11C-B34F-464C-985E-E6C3795D2F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olx.API", "src\OlxFolder\Olx.API\Olx.API.csproj", "{54006F43-34E6-43F3-830E-6CFC592E0C32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NeighborhoodFolder", "NeighborhoodFolder", "{EEDA01D1-6C36-4814-99B8-2CAEF9C9ECA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neighborhood.API", "src\NeighborhoodFolder\Neighborhood.API\Neighborhood.API.csproj", "{B0F47FBC-9377-4C8A-9C3A-605F8B7E8E5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A14BCCFF-1C39-4875-ADE8-189EE089BB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14BCCFF-1C39-4875-ADE8-189EE089BB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14BCCFF-1C39-4875-ADE8-189EE089BB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14BCCFF-1C39-4875-ADE8-189EE089BB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12FBD5BB-1AB1-40FC-8B65-683B00B7E8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FBD5BB-1AB1-40FC-8B65-683B00B7E8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FBD5BB-1AB1-40FC-8B65-683B00B7E8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FBD5BB-1AB1-40FC-8B65-683B00B7E8F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54006F43-34E6-43F3-830E-6CFC592E0C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54006F43-34E6-43F3-830E-6CFC592E0C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54006F43-34E6-43F3-830E-6CFC592E0C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54006F43-34E6-43F3-830E-6CFC592E0C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F47FBC-9377-4C8A-9C3A-605F8B7E8E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F47FBC-9377-4C8A-9C3A-605F8B7E8E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F47FBC-9377-4C8A-9C3A-605F8B7E8E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F47FBC-9377-4C8A-9C3A-605F8B7E8E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61CB9DA9-6EA0-4D94-8DFA-BBB0DBFEFE61} = {9340311F-AB13-4E2B-9876-40703FED9D2A}
+		{A14BCCFF-1C39-4875-ADE8-189EE089BB19} = {61CB9DA9-6EA0-4D94-8DFA-BBB0DBFEFE61}
+		{7E5ED8A8-188A-4071-A9FA-583FFA41206F} = {9340311F-AB13-4E2B-9876-40703FED9D2A}
+		{12FBD5BB-1AB1-40FC-8B65-683B00B7E8F4} = {7E5ED8A8-188A-4071-A9FA-583FFA41206F}
+		{00E8F11C-B34F-464C-985E-E6C3795D2F70} = {9340311F-AB13-4E2B-9876-40703FED9D2A}
+		{54006F43-34E6-43F3-830E-6CFC592E0C32} = {00E8F11C-B34F-464C-985E-E6C3795D2F70}
+		{EEDA01D1-6C36-4814-99B8-2CAEF9C9ECA4} = {9340311F-AB13-4E2B-9876-40703FED9D2A}
+		{B0F47FBC-9377-4C8A-9C3A-605F8B7E8E5F} = {EEDA01D1-6C36-4814-99B8-2CAEF9C9ECA4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0C443C5-6F09-44B5-8CD6-0318904EA7D9}
+	EndGlobalSection
+EndGlobal
