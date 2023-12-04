@@ -14,3 +14,7 @@ Exam Projects (OLX , Yandex Eats , Yandex Taxi , Neighborhood)
 📌Olx Database
 ![image](https://github.com/Kohinur0124/ExamProjectwithMicroServices/assets/118399896/89642cd2-9ed3-4a00-8a2b-b2f5d3744c10)
 📎https://drawsql.app/teams/sevinch-1/diagrams/olx
+
+📌Mahalla
+![image](https://github.com/Kohinur0124/ExamProjectwithMicroServices/assets/118399896/18ec3080-0a80-44d5-ac54-57834e98c805)
+📎https://drawsql.app/teams/sevinch-1/diagrams/mahalla
