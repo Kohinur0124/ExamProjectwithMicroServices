@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "yandexeats.api": "StartDebugging",
+        "yandextaxi.api": "StartDebugging",
+        "ocelotformicroservices": "StartDebugging"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+version: '3.4'
+
+networks:
+  backend:
+
+services:
+  dbyandexeats:
+    container_name: dbyandexeats-container
+    image:  mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Word!5434#
+    ports:
+      - 1779:1433 
+    networks:
+      - backend
+
+  yandexeats.api:
+    image: ${DOCKER_REGISTRY-}yandexeatsapi
+    build:
+      context: .
+      dockerfile: src/YandexEatsFolder/YandexEats.API/Dockerfile
+    networks:
+      - backend
+    ports:
+    - 1456:80
+  
+    environment:
+        - DB_HOST=dbyandexeats
+        - DB_NAME=yandexeatsdb
+        - SA_PASSWORD=Word!5434#
+
+  yandextaxi.api:
+    image: ${DOCKER_REGISTRY-}yandextaxiapi
+    build:
+      context: .
+      dockerfile: src/YandexTaxiFolder/YandexTaxi.API/Dockerfile
+
+
+  ocelotformicroservices:
+    image: ${DOCKER_REGISTRY-}ocelotformicroservices
+    build:
+      context: .
+      dockerfile: src/OcelotForMicroServices/Dockerfile
+ 
+    ports:
+    - 8797:80
+    networks:
+    - backend

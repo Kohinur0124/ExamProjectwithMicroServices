@@ -1,4 +1,4 @@
-namespace YandexEats.API
+namespace OcelotForMicroServices
 {
     public class WeatherForecast
     {

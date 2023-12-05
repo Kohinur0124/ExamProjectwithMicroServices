@@ -7,43 +7,47 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9340311F-AB1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YandexTaxiFolder", "YandexTaxiFolder", "{61CB9DA9-6EA0-4D94-8DFA-BBB0DBFEFE61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexTaxi.API", "src\YandexTaxiFolder\YandexTaxi.API\YandexTaxi.API.csproj", "{A14BCCFF-1C39-4875-ADE8-189EE089BB19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YandexTaxi.API", "src\YandexTaxiFolder\YandexTaxi.API\YandexTaxi.API.csproj", "{A14BCCFF-1C39-4875-ADE8-189EE089BB19}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YandexEatsFolder", "YandexEatsFolder", "{7E5ED8A8-188A-4071-A9FA-583FFA41206F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexEats.API", "src\YandexEatsFolder\YandexEats.API\YandexEats.API.csproj", "{12FBD5BB-1AB1-40FC-8B65-683B00B7E8F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YandexEats.API", "src\YandexEatsFolder\YandexEats.API\YandexEats.API.csproj", "{12FBD5BB-1AB1-40FC-8B65-683B00B7E8F4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OlxFolder", "OlxFolder", "{00E8F11C-B34F-464C-985E-E6C3795D2F70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olx.API", "src\OlxFolder\Olx.API\Olx.API.csproj", "{54006F43-34E6-43F3-830E-6CFC592E0C32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olx.API", "src\OlxFolder\Olx.API\Olx.API.csproj", "{54006F43-34E6-43F3-830E-6CFC592E0C32}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NeighborhoodFolder", "NeighborhoodFolder", "{EEDA01D1-6C36-4814-99B8-2CAEF9C9ECA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neighborhood.API", "src\NeighborhoodFolder\Neighborhood.API\Neighborhood.API.csproj", "{B0F47FBC-9377-4C8A-9C3A-605F8B7E8E5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neighborhood.API", "src\NeighborhoodFolder\Neighborhood.API\Neighborhood.API.csproj", "{B0F47FBC-9377-4C8A-9C3A-605F8B7E8E5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neighborhood.Domain", "src\NeighborhoodFolder\Neighborhood.Domain\Neighborhood.Domain.csproj", "{39EAB572-0581-4545-A55B-FF49849EDB62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neighborhood.Domain", "src\NeighborhoodFolder\Neighborhood.Domain\Neighborhood.Domain.csproj", "{39EAB572-0581-4545-A55B-FF49849EDB62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neighborhood.Infrastructure", "src\NeighborhoodFolder\Neighborhood.Infrastructure\Neighborhood.Infrastructure.csproj", "{EB993FFE-4465-4DB5-9415-72BEB111CBD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neighborhood.Infrastructure", "src\NeighborhoodFolder\Neighborhood.Infrastructure\Neighborhood.Infrastructure.csproj", "{EB993FFE-4465-4DB5-9415-72BEB111CBD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neighborhood.Application", "src\NeighborhoodFolder\Neighborhood.Application\Neighborhood.Application.csproj", "{7CABABF5-42BE-4D88-8A3E-B10890085A4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neighborhood.Application", "src\NeighborhoodFolder\Neighborhood.Application\Neighborhood.Application.csproj", "{7CABABF5-42BE-4D88-8A3E-B10890085A4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olx.Domain", "src\OlxFolder\Olx.Domain\Olx.Domain.csproj", "{1F5085E1-43C4-40EC-B879-74B312A57190}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olx.Domain", "src\OlxFolder\Olx.Domain\Olx.Domain.csproj", "{1F5085E1-43C4-40EC-B879-74B312A57190}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olx.Application", "src\OlxFolder\Olx.Application\Olx.Application.csproj", "{C068921E-0C04-4678-8538-7857F9A95E5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olx.Application", "src\OlxFolder\Olx.Application\Olx.Application.csproj", "{C068921E-0C04-4678-8538-7857F9A95E5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olx.Infrastructure", "src\OlxFolder\Olx.Infrastructure\Olx.Infrastructure.csproj", "{A277DE62-DBDA-4654-BEE3-2FAB5AF5832D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olx.Infrastructure", "src\OlxFolder\Olx.Infrastructure\Olx.Infrastructure.csproj", "{A277DE62-DBDA-4654-BEE3-2FAB5AF5832D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexEats.Domain", "src\YandexEatsFolder\YandexEats.Domain\YandexEats.Domain.csproj", "{88FBF731-F974-48F2-A36C-577E35F73F00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YandexEats.Domain", "src\YandexEatsFolder\YandexEats.Domain\YandexEats.Domain.csproj", "{88FBF731-F974-48F2-A36C-577E35F73F00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexEats.Application", "src\YandexEatsFolder\YandexEats.Application\YandexEats.Application.csproj", "{88980D30-E6E0-4F67-86A3-4B02B4E3A125}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YandexEats.Application", "src\YandexEatsFolder\YandexEats.Application\YandexEats.Application.csproj", "{88980D30-E6E0-4F67-86A3-4B02B4E3A125}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexEats.Infrastructure", "src\YandexEatsFolder\YandexEats.Infrastructure\YandexEats.Infrastructure.csproj", "{D29AC632-E8FE-4AEC-8F33-B467AF49E7C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YandexEats.Infrastructure", "src\YandexEatsFolder\YandexEats.Infrastructure\YandexEats.Infrastructure.csproj", "{D29AC632-E8FE-4AEC-8F33-B467AF49E7C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexTaxi.Domain", "src\YandexTaxiFolder\YandexTaxi.Domain\YandexTaxi.Domain.csproj", "{F1C04E73-F56F-4E53-B35D-591D66C9BB78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YandexTaxi.Domain", "src\YandexTaxiFolder\YandexTaxi.Domain\YandexTaxi.Domain.csproj", "{F1C04E73-F56F-4E53-B35D-591D66C9BB78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexTaxi.Application", "src\YandexTaxiFolder\YandexTaxi.Application\YandexTaxi.Application.csproj", "{2BCA4C63-F5BD-44D2-B4D1-6903EEE56809}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YandexTaxi.Application", "src\YandexTaxiFolder\YandexTaxi.Application\YandexTaxi.Application.csproj", "{2BCA4C63-F5BD-44D2-B4D1-6903EEE56809}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexTaxi.Infrastructure", "src\YandexTaxiFolder\YandexTaxi.Infrastructure\YandexTaxi.Infrastructure.csproj", "{3EFED219-3F42-470B-8C3B-447337C5E082}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YandexTaxi.Infrastructure", "src\YandexTaxiFolder\YandexTaxi.Infrastructure\YandexTaxi.Infrastructure.csproj", "{3EFED219-3F42-470B-8C3B-447337C5E082}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C785386C-DEEC-4B7B-8519-6B91C90BD86A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotForMicroServices", "src\OcelotForMicroServices\OcelotForMicroServices.csproj", "{EBFEDDE7-1473-4941-B06D-3EE289A37AB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +119,14 @@ Global
 		{3EFED219-3F42-470B-8C3B-447337C5E082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EFED219-3F42-470B-8C3B-447337C5E082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EFED219-3F42-470B-8C3B-447337C5E082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C785386C-DEEC-4B7B-8519-6B91C90BD86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C785386C-DEEC-4B7B-8519-6B91C90BD86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C785386C-DEEC-4B7B-8519-6B91C90BD86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C785386C-DEEC-4B7B-8519-6B91C90BD86A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFEDDE7-1473-4941-B06D-3EE289A37AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFEDDE7-1473-4941-B06D-3EE289A37AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFEDDE7-1473-4941-B06D-3EE289A37AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFEDDE7-1473-4941-B06D-3EE289A37AB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +152,7 @@ Global
 		{F1C04E73-F56F-4E53-B35D-591D66C9BB78} = {61CB9DA9-6EA0-4D94-8DFA-BBB0DBFEFE61}
 		{2BCA4C63-F5BD-44D2-B4D1-6903EEE56809} = {61CB9DA9-6EA0-4D94-8DFA-BBB0DBFEFE61}
 		{3EFED219-3F42-470B-8C3B-447337C5E082} = {61CB9DA9-6EA0-4D94-8DFA-BBB0DBFEFE61}
+		{EBFEDDE7-1473-4941-B06D-3EE289A37AB0} = {9340311F-AB13-4E2B-9876-40703FED9D2A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B0C443C5-6F09-44B5-8CD6-0318904EA7D9}
