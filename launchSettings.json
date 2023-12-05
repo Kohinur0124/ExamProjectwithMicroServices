@@ -6,7 +6,8 @@
       "serviceActions": {
         "yandexeats.api": "StartDebugging",
         "yandextaxi.api": "StartDebugging",
-        "ocelotformicroservices": "StartDebugging"
+        "ocelotformicroservices": "StartDebugging",
+        "getawayocelotexam": "StartDebugging"
       }
     }
   }

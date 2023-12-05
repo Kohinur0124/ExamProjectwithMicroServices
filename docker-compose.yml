@@ -23,7 +23,7 @@ services:
     networks:
       - backend
     ports:
-    - 1456:80
+      - 1456:80
   
     environment:
         - DB_HOST=dbyandexeats
@@ -37,13 +37,18 @@ services:
       dockerfile: src/YandexTaxiFolder/YandexTaxi.API/Dockerfile
 
 
-  ocelotformicroservices:
-    image: ${DOCKER_REGISTRY-}ocelotformicroservices
+
+
+  getawayocelotexam:
+    image: ${DOCKER_REGISTRY-}getawayocelotexam
     build:
       context: .
-      dockerfile: src/OcelotForMicroServices/Dockerfile
- 
-    ports:
-    - 8797:80
+      dockerfile: src/getaway/GetawayOcelotExam/Dockerfile
     networks:
-    - backend
+      - backend
+
+  
+
+    ports:
+    - 4758:80
+
