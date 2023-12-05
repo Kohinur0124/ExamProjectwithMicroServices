@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "yandexeats.api",
-          "Port": 1456
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/Users",
@@ -18,13 +18,12 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "yandexeats.api",
-          "Port": 1456
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/Cards",
       "UpstreamHttpMethod": [ "GET", "POST" ]
     }
-   
   ],
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:87987"
