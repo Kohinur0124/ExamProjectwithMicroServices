@@ -23,7 +23,7 @@ services:
     networks:
       - backend
     ports:
-    - 1456:80
+      - 1456:80
   
     environment:
         - DB_HOST=dbyandexeats
@@ -42,8 +42,7 @@ services:
     build:
       context: .
       dockerfile: src/OcelotForMicroServices/Dockerfile
- 
     ports:
-    - 8797:80
+      - 8797:80
     networks:
-    - backend
+      - backend
