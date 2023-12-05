@@ -11,6 +11,8 @@ namespace YandexEats.Application.Abstractions
     public interface IApplicationDbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<Card> Cards { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         public Task<int> SaveChangesAsync(CancellationToken cancellationToken );
     }

@@ -23,5 +23,7 @@ namespace YandexEats.Domain.Entities
 
         [Column("Role")]
         public string Role { get; set; }
+
+        public ICollection<User> Users { get; set; }
     }
 }

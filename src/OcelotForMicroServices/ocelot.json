@@ -11,6 +11,18 @@
       ],
       "UpstreamPathTemplate": "/api/Users",
       "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Cards",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "yandexeats.api",
+          "Port": 1456
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Cards",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
     }
    
   ],
