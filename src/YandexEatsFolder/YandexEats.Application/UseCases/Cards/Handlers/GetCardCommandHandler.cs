@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
-using YandexEats.Application.UseCases.Users.Queries;
+using YandexEats.Application.UseCases.Cards.Queries;
 using YandexEats.Domain.Entities;
 
-namespace YandexEats.Application.UseCases.Users.Handlers
+namespace YandexEats.Application.UseCases.Cards.Handlers
 {
     public class GetCardCommandHandler : IRequestHandler<GetCardCommand, List<Card>>
     {

@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using YandexEats.Domain.Entities;
 
-namespace YandexEats.Application.UseCases.Users.Queries
+namespace YandexEats.Application.UseCases.Cards.Queries
 {
-    public class GetCardCommand:IRequest<List<Card>>
+    public class GetCardCommand : IRequest<List<Card>>
     {
 
 

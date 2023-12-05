@@ -25,5 +25,9 @@ namespace YandexEats.Domain.Entities
         public string Role { get; set; }
 
         public ICollection<Customer> Customers { get; set; }
+        public ICollection<Order> Orders { get; set; }
+        public ICollection<Restaurant> Restaurants { get; set; }
+        public ICollection<Basket> Baskets { get; set; }
+    
     }
 }

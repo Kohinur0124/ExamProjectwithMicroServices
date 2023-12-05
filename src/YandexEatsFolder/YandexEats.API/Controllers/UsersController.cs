@@ -32,4 +32,22 @@ public class UsersController : ControllerBase
         var t = await _mediator.Send(postUser);
         return Ok(t);
     }
+
+    [HttpPut]
+
+    public async ValueTask<IActionResult> UpdateUser(PutUserCommand postUser)
+    {
+        var t = await _mediator.Send(postUser);
+        return Ok(t);
+    }
+
+    [HttpDelete]
+
+    public async ValueTask<IActionResult> DeleteUser(DeleteUsersCommand postUser)
+    {
+        var t = await _mediator.Send(postUser);
+        return Ok(t);
+    }
+
+
 }

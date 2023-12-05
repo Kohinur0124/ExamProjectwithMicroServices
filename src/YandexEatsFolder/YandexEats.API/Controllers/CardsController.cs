@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using YandexEats.Application.UseCases.Cards.Commands;
+using YandexEats.Application.UseCases.Cards.Queries;
 using YandexEats.Application.UseCases.Users.Queries;
 
 namespace YandexEats.API.Controllers
@@ -22,6 +24,14 @@ namespace YandexEats.API.Controllers
         {
             var cards = await _mediator.Send(new GetCardCommand());
             return Ok(cards);
+        }
+
+        [HttpPost]
+
+        public async ValueTask<bool> AddCard(PostCardCommand postCard)
+        {
+            var t = await _mediator.Send(postCard);
+            return t;
         }
 
     }
