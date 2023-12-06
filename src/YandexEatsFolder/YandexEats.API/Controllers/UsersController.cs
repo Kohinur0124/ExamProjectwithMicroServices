@@ -21,13 +21,13 @@ public class UsersController : ControllerBase
 
     public async ValueTask<IActionResult> GetAllUsers()
     {
-        var users = await _mediator.Send(new GetUserCommand());
+        var users = await _mediator.Send(new GetCardsCommand());
         return Ok(users);
     }
 
     [HttpPost]
 
-    public async ValueTask<IActionResult> CreateUser(PostUserCommand postUser)
+    public async ValueTask<IActionResult> CreateUser(PostCardCommand postUser)
     {
         var t = await _mediator.Send(postUser);
         return Ok(t);
@@ -35,7 +35,7 @@ public class UsersController : ControllerBase
 
     [HttpPut]
 
-    public async ValueTask<IActionResult> UpdateUser(PutUserCommand postUser)
+    public async ValueTask<IActionResult> UpdateUser(PutCardsCommand postUser)
     {
         var t = await _mediator.Send(postUser);
         return Ok(t);
@@ -43,7 +43,7 @@ public class UsersController : ControllerBase
 
     [HttpDelete]
 
-    public async ValueTask<IActionResult> DeleteUser(DeleteUsersCommand postUser)
+    public async ValueTask<IActionResult> DeleteUser(DeleteCardsCommand postUser)
     {
         var t = await _mediator.Send(postUser);
         return Ok(t);
