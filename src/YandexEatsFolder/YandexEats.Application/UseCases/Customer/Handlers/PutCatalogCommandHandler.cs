@@ -1,14 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
-using YandexEats.Application.UseCases.Catalog.Commands;
 using YandexEats.Application.UseCases.Customer.Commands;
-using YandexEats.Application.UseCases.User.Commands;
 
 namespace YandexEats.Application.UseCases.Customer.Handlers
 {
@@ -35,7 +28,7 @@ namespace YandexEats.Application.UseCases.Customer.Handlers
                 res.LastName = request.LastName;
                 res.UserId = request.UserId;
                 res.CardId = request.CardId;
-                
+
 
                 _context.Customers.Update(res);
 

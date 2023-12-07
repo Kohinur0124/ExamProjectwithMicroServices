@@ -1,11 +1,7 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using YandexEats.Application.UseCases.Basket.Commands;
 using YandexEats.Application.UseCases.Basket.Queries;
-using YandexEats.Application.UseCases.Card.Commands;
-using YandexEats.Application.UseCases.Card.Queries;
-using YandexEats.Application.UseCases.User.Commands;
 
 namespace YandexEats.API.Controllers
 {

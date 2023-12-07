@@ -1,13 +1,6 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
-using YandexEats.Application.UseCases.Catalog.Commands;
 using YandexEats.Application.UseCases.Food.Commands;
-using YandexEats.Application.UseCases.User.Commands;
 
 namespace YandexEats.Application.UseCases.Foods.Handlers
 {
@@ -33,7 +26,7 @@ namespace YandexEats.Application.UseCases.Foods.Handlers
                     ResturauntId = request.ResturauntId,
                     Portion = request.Portion,
                     Price = request.Price,
-                 
+
                 };
                 await _context.Foods.AddAsync(res);
                 await _context.SaveChangesAsync(cancellationToken);

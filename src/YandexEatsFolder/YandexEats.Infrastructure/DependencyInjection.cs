@@ -12,7 +12,7 @@ namespace YandexEats.Infrastructure
         {
             services.AddDbContext<IApplicationDbContext, ApplicationDbContext>(options =>
             {
-                var con  =  $"Data source={Environment.GetEnvironmentVariable("DB_HOST")};" +
+                var con = $"Data source={Environment.GetEnvironmentVariable("DB_HOST")};" +
                             $"Initial Catalog={Environment.GetEnvironmentVariable("DB_NAME")};" +
                             $"User ID=SA;Password={Environment.GetEnvironmentVariable("SA_PASSWORD")};" +
                             $"TrustServerCertificate=True;";

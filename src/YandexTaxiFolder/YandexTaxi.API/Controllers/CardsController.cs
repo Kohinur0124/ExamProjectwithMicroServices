@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using YandexTaxi.Application.UseCases.Card.Commands;
 using YandexTaxi.Application.UseCases.Card.Queries;

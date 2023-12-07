@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YandexTaxi.Domain.Entity
 {
-    [Table("Order",Schema ="dbo")]
+    [Table("Order", Schema = "dbo")]
     public class Order
     {
         [Key]
@@ -18,16 +12,19 @@ namespace YandexTaxi.Domain.Entity
         public int Id { get; set; }
 
         [Column("AddressIdOne")]
+        [ForeignKey("AddressIdOne")]
         public int AddressIdOne { get; set; }
 
         [Column("AddressIdTwo")]
+        [ForeignKey("AddressIdTwo")]
         public int AddressIdTwo { get; set; }
 
         [Column("TaxiId")]
+        [ForeignKey("TaxiId")]
         public int TaxiId { get; set; }
 
         [Column("Total")]
-        public decimal Total { get; set; }
+        public long Total { get; set; }
 
         [Column("CreatedDate")]
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;

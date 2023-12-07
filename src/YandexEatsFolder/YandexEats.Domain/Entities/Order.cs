@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YandexEats.Domain.Entities
 {
-    [Table("Order",Schema ="dbo")]
+    [Table("Order", Schema = "dbo")]
     public class Order
     {
         [Key]
@@ -20,7 +15,7 @@ namespace YandexEats.Domain.Entities
         public int UserId { get; set; }
 
         [Column("Total")]
-        public decimal Total {  get; set; }
+        public decimal Total { get; set; }
 
         [Column("Status")]
         public string Status { get; set; }

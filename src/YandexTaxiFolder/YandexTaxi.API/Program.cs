@@ -1,5 +1,5 @@
-using YandexTaxi.Infrastructure;
 using YandexTaxi.Application;
+using YandexTaxi.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

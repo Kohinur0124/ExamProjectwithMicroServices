@@ -1,13 +1,6 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
-using YandexEats.Application.UseCases.Catalog.Commands;
 using YandexEats.Application.UseCases.Order.Commands;
-using YandexEats.Application.UseCases.User.Commands;
 
 namespace YandexEats.Application.UseCases.Order.Handlers
 {
@@ -31,7 +24,7 @@ namespace YandexEats.Application.UseCases.Order.Handlers
                     Total = request.Total,
                     Created = request.Created,
                     Status = request.Status,
-                 
+
                 };
                 await _context.Orders.AddAsync(res);
                 await _context.SaveChangesAsync(cancellationToken);

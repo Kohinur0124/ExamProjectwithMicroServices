@@ -1,13 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
 using YandexEats.Application.UseCases.Card.Commands;
-using YandexEats.Application.UseCases.User.Commands;
 
 namespace YandexEats.Application.UseCases.Card.Handlers
 {

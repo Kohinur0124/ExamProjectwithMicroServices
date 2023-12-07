@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using YandexEats.Application.UseCases.User.Commands;
 using YandexEats.Application.UseCases.User.Queries;

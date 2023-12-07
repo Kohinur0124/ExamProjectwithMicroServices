@@ -1,14 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
-using YandexEats.Application.UseCases.Catalog.Queries;
 using YandexEats.Application.UseCases.Customer.Queries;
-using YandexEats.Application.UseCases.User.Queries;
 
 namespace YandexEats.Application.UseCases.Customer.Handlers
 {

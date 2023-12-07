@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YandexEats.Domain.Entities
 {
-    [Table("Catalog",Schema ="dbo")]
+    [Table("Catalog", Schema = "dbo")]
     public class Catalog
     {
         [Key]

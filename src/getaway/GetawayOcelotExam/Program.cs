@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 
 
 builder.Configuration.SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("ocelot.json",optional:false,reloadOnChange:true)
+    .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true)
     .AddEnvironmentVariables();
 
 builder.Services.AddOcelot(builder.Configuration);

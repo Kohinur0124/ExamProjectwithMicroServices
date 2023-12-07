@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using YandexEats.Application.Abstractions;
-using YandexEats.Application.UseCases.Catalog.Commands;
 using YandexEats.Application.UseCases.Customer.Commands;
 
 namespace YandexEats.Application.UseCases.Customer.Handlers
@@ -21,10 +20,10 @@ namespace YandexEats.Application.UseCases.Customer.Handlers
             {
                 var res = new Domain.Entities.Customer
                 {
-                   FirstName = request.FirstName,
-                   LastName = request.LastName,
-                   UserId = request.UserId,
-                   CardId = request.CardId,
+                    FirstName = request.FirstName,
+                    LastName = request.LastName,
+                    UserId = request.UserId,
+                    CardId = request.CardId,
 
                 };
                 await _context.Customers.AddAsync(res);

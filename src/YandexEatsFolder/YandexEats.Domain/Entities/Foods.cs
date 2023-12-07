@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YandexEats.Domain.Entities
 {
-    [Table("Foods",Schema ="dbo")]
+    [Table("Foods", Schema = "dbo")]
     public class Foods
     {
         [Key]
@@ -31,14 +26,14 @@ namespace YandexEats.Domain.Entities
         public int ResturauntId { get; set; }
 
         [Column("Portion")]
-        public string Portion {  get; set; }
+        public string Portion { get; set; }
 
         [Column("Price")]
         public decimal Price { get; set; }
 
         public ICollection<Basket> Baskets { get; set; }
         public Catalog? Catalog { get; set; }
-        public Restaurant? Restaurant { get; set;}
+        public Restaurant? Restaurant { get; set; }
 
     }
 }

@@ -1,10 +1,5 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
 using YandexEats.Application.UseCases.User.Commands;
 
@@ -26,7 +21,7 @@ namespace YandexEats.Application.UseCases.User.Handlers
             {
 
                 var res = await _context.Users.
-                    FirstOrDefaultAsync(x=>x.Id == request.Id);
+                    FirstOrDefaultAsync(x => x.Id == request.Id);
 
                 res.PhoneNumber = request.PhoneNumber;
                 res.Password = request.Password;

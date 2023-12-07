@@ -1,8 +1,5 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using YandexEats.Application.UseCases.Basket.Commands;
-using YandexEats.Application.UseCases.Basket.Queries;
 using YandexEats.Application.UseCases.Resturaunt.Commands;
 using YandexEats.Application.UseCases.Resturaunt.Queries;
 

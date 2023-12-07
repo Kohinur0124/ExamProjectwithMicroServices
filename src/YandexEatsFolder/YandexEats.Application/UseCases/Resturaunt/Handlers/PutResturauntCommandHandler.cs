@@ -1,15 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
-using YandexEats.Application.UseCases.Catalog.Commands;
-using YandexEats.Application.UseCases.Food.Commands;
 using YandexEats.Application.UseCases.Resturaunt.Commands;
-using YandexEats.Application.UseCases.User.Commands;
 
 namespace YandexEats.Application.UseCases.Resturaunt.Handlers
 {
@@ -35,7 +27,7 @@ namespace YandexEats.Application.UseCases.Resturaunt.Handlers
                 res.Name = request.Name;
                 res.UserId = request.UserId;
                 res.CardId = request.CardId;
-              
+
                 _context.Restaurants.Update(res);
 
                 await _context.SaveChangesAsync(cancellationToken);

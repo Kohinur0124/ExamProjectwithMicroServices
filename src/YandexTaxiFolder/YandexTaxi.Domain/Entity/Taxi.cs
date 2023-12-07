@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YandexTaxi.Domain.Entity
 {
-    [Table("Taxi",Schema ="dbo")]
+    [Table("Taxi", Schema = "dbo")]
     public class Taxi
     {
         [Key]
@@ -17,6 +12,7 @@ namespace YandexTaxi.Domain.Entity
         public int Id { get; set; }
 
         [Column("UserId")]
+        [ForeignKey("UserId")]
         public int UserId { get; set; }
 
         [Column("Mark")]
@@ -25,8 +21,8 @@ namespace YandexTaxi.Domain.Entity
         [Column("MarkCount")]
         public float MarkCount { get; set; }
 
-        public User? User { get; set; } 
-        public ICollection<Order> Order { get; set; }
-        public ICollection<Car> Cars { get; set; }
+        public User? User { get; set; }
+        public ICollection<Order>? Order { get; set; }
+        public ICollection<Car>? Cars { get; set; }
     }
 }

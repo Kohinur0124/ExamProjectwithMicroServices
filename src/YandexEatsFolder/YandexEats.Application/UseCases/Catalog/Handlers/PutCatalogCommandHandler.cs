@@ -1,13 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
 using YandexEats.Application.UseCases.Catalog.Commands;
-using YandexEats.Application.UseCases.User.Commands;
 
 namespace YandexEats.Application.UseCases.Catalog.Handlers
 {
@@ -32,7 +26,7 @@ namespace YandexEats.Application.UseCases.Catalog.Handlers
 
                 res.Name = request.Name;
                 res.Desc = request.Desc;
-                
+
 
                 _context.Catalog.Update(res);
 

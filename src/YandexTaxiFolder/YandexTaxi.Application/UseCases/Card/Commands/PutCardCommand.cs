@@ -1,13 +1,8 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace YandexTaxi.Application.UseCases.Card.Commands
 {
-    public class PutCardCommand: IRequest<bool>
+    public class PutCardCommand : IRequest<bool>
     {
         public int Id { get; set; }
 
@@ -15,6 +10,6 @@ namespace YandexTaxi.Application.UseCases.Card.Commands
 
         public string ExpireDate { get; set; }
 
-        public decimal Amount { get; set; }
+        public long Amount { get; set; }
     }
 }

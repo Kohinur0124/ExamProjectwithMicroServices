@@ -1,10 +1,5 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using YandexEats.Application.Abstractions;
 using YandexEats.Application.UseCases.User.Commands;
 
@@ -21,7 +16,7 @@ namespace YandexEats.Application.UseCases.User.Handlers
             _context = context;
         }
 
-        public  async Task<bool> Handle(DeleteUserCommand request, CancellationToken cancellationToken)
+        public async Task<bool> Handle(DeleteUserCommand request, CancellationToken cancellationToken)
         {
             try
             {
