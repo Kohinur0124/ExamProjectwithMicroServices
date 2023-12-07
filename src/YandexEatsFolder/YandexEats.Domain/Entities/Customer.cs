@@ -15,15 +15,19 @@ namespace YandexEats.Domain.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("CustomerId")]
         public int Id { get; set; }
-        [Column("UserId")]
+
         [ForeignKey("UserId")]
+        [Column("UserId")]
         public int UserId { get; set; }
+
         [Column("FirstName")]
         public string FirstName { get; set; }
+
         [Column("LastName")]
         public string LastName { get; set; }
-        [Column("CardId")]
+
         [ForeignKey("CardId")]
+        [Column("CardId")]   
         public int CardId { get; set; }
        
         public User? User { get; set; }

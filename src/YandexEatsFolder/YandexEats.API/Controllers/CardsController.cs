@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using YandexEats.Application.UseCases.Cards.Commands;
-using YandexEats.Application.UseCases.Cards.Queries;
-using YandexEats.Application.UseCases.Users.Queries;
+using YandexEats.Application.UseCases.Card.Commands;
+using YandexEats.Application.UseCases.Card.Queries;
+using YandexEats.Application.UseCases.User.Commands;
 
 namespace YandexEats.API.Controllers
 {
@@ -32,6 +32,21 @@ namespace YandexEats.API.Controllers
         {
             var t = await _mediator.Send(postCard);
             return t;
+        }
+        [HttpPut]
+
+        public async ValueTask<IActionResult> UpdateCard(PutCardCommand postUser)
+        {
+            var t = await _mediator.Send(postUser);
+            return Ok(t);
+        }
+
+        [HttpDelete]
+
+        public async ValueTask<IActionResult> DeleteCard(DeleteCardCommand postUser)
+        {
+            var t = await _mediator.Send(postUser);
+            return Ok(t);
         }
 
     }

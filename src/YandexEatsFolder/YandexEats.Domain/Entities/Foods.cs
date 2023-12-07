@@ -22,9 +22,11 @@ namespace YandexEats.Domain.Entities
         [Column("Desc")]
         public string Desc { get; set; }
 
+        [ForeignKey("CatalogId")]
         [Column("CatalogId")]
         public int CatalogId { get; set; }
 
+        [ForeignKey("ResturauntId")]
         [Column("ResturauntId")]
         public int ResturauntId { get; set; }
 

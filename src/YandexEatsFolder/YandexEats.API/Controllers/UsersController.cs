@@ -1,9 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using YandexEats.Application.UseCases.Users.Commands;
-using YandexEats.Application.UseCases.Users.Queries;
-
+using YandexEats.Application.UseCases.User.Commands;
+using YandexEats.Application.UseCases.User.Queries;
 namespace YandexEats.API.Controllers;
 
 [Route("api/[controller]")]
@@ -21,13 +20,13 @@ public class UsersController : ControllerBase
 
     public async ValueTask<IActionResult> GetAllUsers()
     {
-        var users = await _mediator.Send(new GetCardsCommand());
+        var users = await _mediator.Send(new GetUserCommand());
         return Ok(users);
     }
 
     [HttpPost]
 
-    public async ValueTask<IActionResult> CreateUser(PostCardCommand postUser)
+    public async ValueTask<IActionResult> CreateUser(PostUserCommand postUser)
     {
         var t = await _mediator.Send(postUser);
         return Ok(t);
@@ -35,7 +34,7 @@ public class UsersController : ControllerBase
 
     [HttpPut]
 
-    public async ValueTask<IActionResult> UpdateUser(PutCardsCommand postUser)
+    public async ValueTask<IActionResult> UpdateUser(PutUserCommand postUser)
     {
         var t = await _mediator.Send(postUser);
         return Ok(t);
@@ -43,7 +42,7 @@ public class UsersController : ControllerBase
 
     [HttpDelete]
 
-    public async ValueTask<IActionResult> DeleteUser(DeleteCardsCommand postUser)
+    public async ValueTask<IActionResult> DeleteUser(DeleteUserCommand postUser)
     {
         var t = await _mediator.Send(postUser);
         return Ok(t);

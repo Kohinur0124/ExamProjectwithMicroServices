@@ -19,16 +19,16 @@ namespace YandexEats.Domain.Entities
         [Column("Name")]
         public string Name { get; set; }
 
+        [ForeignKey("UserId")]
         [Column("UserId")]
-
         public int UserId { get; set; }
 
+        [ForeignKey("CardId")]
         [Column("CardId")]
-        
-        public int RestaurantId { get;}
+        public int CardId { get; set; }
 
         public User? User { get; set; }
-        public ICollection<Card> Cards { get; set; }
+        public Card? Card { get; set; }
         public ICollection<Foods> Foods { get; set; }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +15,18 @@ namespace YandexTaxi.Infrastructure.Persistance
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options) 
         {
-
+            var databaseCreator = Database.GetService<IDatabaseCreator>() as RelationalDatabaseCreator;
+            if (databaseCreator != null)
+            {
+                if (!databaseCreator.CanConnect()) databaseCreator.Create();
+                if (!databaseCreator.HasTables()) databaseCreator.CreateTables();
+            }
         }
         public DbSet<Card> Cards { get; set; }
-
-    }
+        public DbSet<Address> Address { get; set; }
+        public DbSet<Car> Car { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<Taxi> Taxi { get ; set ; }
+        public DbSet<User> User { get ; set;}
+    ;
 }

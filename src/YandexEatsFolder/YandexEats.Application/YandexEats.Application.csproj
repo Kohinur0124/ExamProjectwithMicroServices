@@ -17,8 +17,4 @@
     <ProjectReference Include="..\YandexEats.Domain\YandexEats.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UseCases\" />
-  </ItemGroup>
-
 </Project>

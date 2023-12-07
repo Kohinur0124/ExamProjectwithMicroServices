@@ -11,9 +11,12 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Word!5434#
     ports:
-      - 1779:1433 
+      - 1780:1433 
     networks:
       - backend
+    volumes:
+      - c:\mssql:/var/opt/mssql/data
+
 
   yandexeats.api:
     image: ${DOCKER_REGISTRY-}yandexeatsapi
@@ -27,7 +30,7 @@ services:
   
     environment:
         - DB_HOST=dbyandexeats
-        - DB_NAME=yandexeatsdb
+        - DB_NAME=Examyandexeatsdb
         - SA_PASSWORD=Word!5434#
 
   yandextaxi.api:
@@ -35,7 +38,15 @@ services:
     build:
       context: .
       dockerfile: src/YandexTaxiFolder/YandexTaxi.API/Dockerfile
-
+    networks:
+      - backend
+    ports:
+      - 1488:80
+  
+    environment:
+        - DB_HOST=dbyandexeats
+        - DB_NAME=Examyandextaxidb
+        - SA_PASSWORD=Word!5434#
 
 
 
@@ -46,7 +57,7 @@ services:
       dockerfile: src/getaway/GetawayOcelotExam/Dockerfile
     networks:
       - backend
-
+   
   
 
     ports:

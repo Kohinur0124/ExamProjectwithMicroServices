@@ -17,8 +17,4 @@
     <ProjectReference Include="..\YandexTaxi.Domain\YandexTaxi.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UseCases\Commands\" />
-  </ItemGroup>
-
 </Project>
