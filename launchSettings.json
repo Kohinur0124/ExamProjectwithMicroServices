@@ -7,7 +7,9 @@
         "yandexeats.api": "StartDebugging",
         "yandextaxi.api": "StartDebugging",
         "ocelotformicroservices": "StartDebugging",
-        "getawayocelotexam": "StartDebugging"
+        "getawayocelotexam": "StartDebugging",
+        "olx.api": "StartDebugging",
+        "authapiexam": "StartDebugging"
       }
     }
   }

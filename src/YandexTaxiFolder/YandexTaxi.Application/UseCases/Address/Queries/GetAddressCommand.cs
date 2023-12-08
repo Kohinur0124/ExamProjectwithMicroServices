@@ -1,8 +1,8 @@
 ﻿using MediatR;
 
-namespace YandexTaxi.Application.UseCases.Card.Queries
+namespace YandexTaxi.Application.UseCases.Address.Queries
 {
-    public class GetCardCommand : IRequest<List<Domain.Entity.Card>>
+    public class GetAddressCommand : IRequest<List<Domain.Entity.Address>>
     {
     }
 }

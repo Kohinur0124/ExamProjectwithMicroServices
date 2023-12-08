@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using YandexTaxi.Application.Abstraction;
-using YandexTaxi.Application.UseCases.Card.Queries;
+using YandexTaxi.Application.UseCases.Address.Queries;
 
 namespace YandexTaxi.Application.UseCases.Address.Handlers
 {
@@ -15,7 +15,8 @@ namespace YandexTaxi.Application.UseCases.Address.Handlers
             _context = context;
         }
 
-        public async Task<List<Domain.Entity.Card>> Handle(GetCardCommand request, CancellationToken cancellationToken)
+        public async Task<List<Domain.Entity.Address>> Handle(GetAddressCommand request, CancellationToken cancellationToken)
+
         {
             return await _context.Address.ToListAsync();
         }

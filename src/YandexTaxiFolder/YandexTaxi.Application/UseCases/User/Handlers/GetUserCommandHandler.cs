@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using YandexTaxi.Application.Abstraction;
+using YandexTaxi.Application.UseCases.User.Queries;
 
 namespace YandexTaxi.Application.UseCases.User.Handlers
 {
@@ -15,9 +16,9 @@ namespace YandexTaxi.Application.UseCases.User.Handlers
             _context = context;
         }
 
-        public async Task<List<Domain.Entities.User>> Handle(GetUserCommand request, CancellationToken cancellationToken)
+        public async Task<List<Domain.Entity.User>> Handle(GetUserCommand request, CancellationToken cancellationToken)
         {
-            return await _context.Users.ToListAsync();
+            return await _context.User.ToListAsync();
         }
     }
 }

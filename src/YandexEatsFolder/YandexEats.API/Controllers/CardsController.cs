@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using YandexEats.Application.UseCases.Card.Commands;
 using YandexEats.Application.UseCases.Card.Queries;
@@ -7,6 +8,7 @@ namespace YandexEats.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]Ы
     public class CardsController : ControllerBase
     {
         private readonly IMediator _mediator;

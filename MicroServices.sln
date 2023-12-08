@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YandexTaxi.Infrastructure",
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C785386C-DEEC-4B7B-8519-6B91C90BD86A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetawayOcelotExam", "src\getaway\GetawayOcelotExam\GetawayOcelotExam.csproj", "{6AC70AB1-A4A4-4D95-B23A-9FAB0F4FDE1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetawayOcelotExam", "src\getaway\GetawayOcelotExam\GetawayOcelotExam.csproj", "{6AC70AB1-A4A4-4D95-B23A-9FAB0F4FDE1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthApiExam", "src\Auth\AuthApiExam\AuthApiExam.csproj", "{CAAFA51D-B271-453E-AD06-B81D4B4C0E6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +129,10 @@ Global
 		{6AC70AB1-A4A4-4D95-B23A-9FAB0F4FDE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AC70AB1-A4A4-4D95-B23A-9FAB0F4FDE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AC70AB1-A4A4-4D95-B23A-9FAB0F4FDE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAAFA51D-B271-453E-AD06-B81D4B4C0E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAAFA51D-B271-453E-AD06-B81D4B4C0E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAAFA51D-B271-453E-AD06-B81D4B4C0E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAAFA51D-B271-453E-AD06-B81D4B4C0E6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -153,6 +159,7 @@ Global
 		{2BCA4C63-F5BD-44D2-B4D1-6903EEE56809} = {61CB9DA9-6EA0-4D94-8DFA-BBB0DBFEFE61}
 		{3EFED219-3F42-470B-8C3B-447337C5E082} = {61CB9DA9-6EA0-4D94-8DFA-BBB0DBFEFE61}
 		{6AC70AB1-A4A4-4D95-B23A-9FAB0F4FDE1B} = {9340311F-AB13-4E2B-9876-40703FED9D2A}
+		{CAAFA51D-B271-453E-AD06-B81D4B4C0E6E} = {9340311F-AB13-4E2B-9876-40703FED9D2A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B0C443C5-6F09-44B5-8CD6-0318904EA7D9}
