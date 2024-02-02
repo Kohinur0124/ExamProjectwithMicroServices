@@ -13,46 +13,39 @@ namespace AuthApiExam.Services
     public class TokenGenerator
     {
        
-        private readonly IDatabase _distributedCache;
 
-        public TokenGenerator( IDistributedCache distributedCache = null)
-        {
-            var redis = ConnectionMultiplexer.Connect("redis,6379");
-            _distributedCache = redis.GetDatabase();
-        }
+        
 
         public async ValueTask<string> TGeneratorAsync(DtoLogin loginDTO)
         {
-            var cache  = await _distributedCache.StringGetAsync("GetAllUserYandexEats");
-            var lst = JsonConvert.DeserializeObject<List<DtoLogin>>(cache);
-            
-            var user = lst.FirstOrDefault(x=>x.PhoneNumber == loginDTO.PhoneNumber && x.Password==loginDTO.Password && x.Role==loginDTO.Role );
-            if (user == null)
-            {
-                return "User Topilmadi";
-            }
-            
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("mana-shu-security-key"));
-                var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-                var claims = new List<Claim>()
+           
+                if(FunctionforTests.isFoundUser(loginDTO))
                 {
-                    new Claim("PhoneNumber", loginDTO.PhoneNumber),
-                    new Claim("Password",loginDTO.Password),
-                    new Claim(ClaimTypes.Role, loginDTO.Role),
-                };
+                    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("mana-shu-security-key"));
+                    var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-                var token = new JwtSecurityToken(
-                    issuer: "Issuer",
-                    audience: "Audience",
-                    claims: claims,
-                    expires: DateTime.Now.AddMinutes(10),
-                    signingCredentials: signingCredentials);
+                    var claims = new List<Claim>()
+                    {
+                        new Claim("PhoneNumber", loginDTO.PhoneNumber),
+                        new Claim("Password",loginDTO.Password),
+                        new Claim(ClaimTypes.Role, loginDTO.Role),
+                    };
 
-                 var s = new JwtSecurityTokenHandler().WriteToken(token).ToString();
+                    var token = new JwtSecurityToken(
+                        issuer: "Issuer",
+                        audience: "Audience",
+                        claims: claims,
+                        expires: DateTime.Now.AddMinutes(10),
+                        signingCredentials: signingCredentials);
+
+                     var s = new JwtSecurityTokenHandler().WriteToken(token).ToString();
 
             
-              return s;
+                  return s;
+
+                }
+            return "User topilmadi";
+            
             
            
 

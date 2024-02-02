@@ -9,7 +9,8 @@
         "ocelotformicroservices": "StartDebugging",
         "getawayocelotexam": "StartDebugging",
         "olx.api": "StartDebugging",
-        "authapiexam": "StartDebugging"
+        "authapiexam": "StartDebugging",
+        "testproject1": "StartDebugging"
       }
     }
   }

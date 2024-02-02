@@ -8,7 +8,7 @@ namespace YandexEats.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]Ы
+  //  [Authorize]
     public class CardsController : ControllerBase
     {
         private readonly IMediator _mediator;

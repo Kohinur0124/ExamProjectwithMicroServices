@@ -21,7 +21,7 @@ builder.Services.AddHostedService<BackgraundServices>();
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = "redis,6379";
-   
+
 });
 
 
@@ -44,8 +44,8 @@ builder.Services.AddAuthentication("Bearer")
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
- app.UseSwagger();
-    app.UseSwaggerUI();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 
 //app.UseHttpsRedirection();
