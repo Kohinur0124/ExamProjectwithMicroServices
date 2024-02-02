@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 namespace YandexEats.Domain.Entities
 {
-    [Table("Users",Schema ="dbo")]
+    [Table("Users", Schema = "dbo")]
     public class User
     {
         [Key]
@@ -19,11 +14,15 @@ namespace YandexEats.Domain.Entities
         public string PhoneNumber { get; set; }
 
         [Column("Password")]
-        public string Password {  get; set; }
+        public string Password { get; set; }
 
         [Column("Role")]
         public string Role { get; set; }
 
-        public ICollection<User> Users { get; set; }
+        public ICollection<Customer> Customers { get; set; }
+        public ICollection<Order> Orders { get; set; }
+        public ICollection<Restaurant> Restaurants { get; set; }
+        public ICollection<Basket> Baskets { get; set; }
+
     }
 }

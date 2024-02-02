@@ -1,5 +1,5 @@
-using YandexTaxi.Infrastructure;
 using YandexTaxi.Application;
+using YandexTaxi.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

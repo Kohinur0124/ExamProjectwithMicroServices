@@ -11,9 +11,12 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Word!5434#
     ports:
-      - 1779:1433 
+      - 1780:1433 
     networks:
       - backend
+    volumes:
+      - c:\mssql:/var/opt/mssql/data
+
 
   yandexeats.api:
     image: ${DOCKER_REGISTRY-}yandexeatsapi
@@ -23,11 +26,11 @@ services:
     networks:
       - backend
     ports:
-    - 1456:80
+      - 1456:80
   
     environment:
         - DB_HOST=dbyandexeats
-        - DB_NAME=yandexeatsdb
+        - DB_NAME=Examyandexeatsdb
         - SA_PASSWORD=Word!5434#
 
   yandextaxi.api:
@@ -35,15 +38,63 @@ services:
     build:
       context: .
       dockerfile: src/YandexTaxiFolder/YandexTaxi.API/Dockerfile
+    networks:
+      - backend
+    ports:
+      - 1488:80
+  
+    environment:
+        - DB_HOST=dbyandexeats
+        - DB_NAME=Examyandextaxidb
+        - SA_PASSWORD=Word!5434#
 
 
-  ocelotformicroservices:
-    image: ${DOCKER_REGISTRY-}ocelotformicroservices
+
+  getawayocelotexam:
+    image: ${DOCKER_REGISTRY-}getawayocelotexam
     build:
       context: .
-      dockerfile: src/OcelotForMicroServices/Dockerfile
- 
-    ports:
-    - 8797:80
+      dockerfile: src/getaway/GetawayOcelotExam/Dockerfile
     networks:
-    - backend
+      - backend
+   
+  
+
+    ports:
+    - 4758:80
+
+
+  olx.api:
+    image: ${DOCKER_REGISTRY-}olxapi
+    build:
+      context: .
+      dockerfile: src/OlxFolder/Olx.API/Dockerfile
+    networks:
+      - backend
+    ports:
+      - 1498:80
+  
+    environment:
+        - DB_HOST=dbyandexeats
+        - DB_NAME=ExamOlxdb
+        - SA_PASSWORD=Word!5434#
+
+  authapiexam:
+    image: ${DOCKER_REGISTRY-}authapiexam
+    build:
+      context: .
+      dockerfile: src/Auth/AuthApiExam/Dockerfile
+
+    networks:
+      - backend
+    ports:
+      - 1578:80
+  redis:
+    container_name: redis-container
+    image: redis:latest
+    # restart: always
+    ports:
+      - 6379:6379
+    networks:
+      - backend
+ 

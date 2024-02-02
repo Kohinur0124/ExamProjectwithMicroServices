@@ -1,12 +1,14 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using YandexEats.Application.UseCases.Users.Queries;
+using YandexEats.Application.UseCases.Card.Commands;
+using YandexEats.Application.UseCases.Card.Queries;
 
 namespace YandexEats.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+  //  [Authorize]
     public class CardsController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -22,6 +24,29 @@ namespace YandexEats.API.Controllers
         {
             var cards = await _mediator.Send(new GetCardCommand());
             return Ok(cards);
+        }
+
+        [HttpPost]
+
+        public async ValueTask<bool> AddCard(PostCardCommand postCard)
+        {
+            var t = await _mediator.Send(postCard);
+            return t;
+        }
+        [HttpPut]
+
+        public async ValueTask<IActionResult> UpdateCard(PutCardCommand postUser)
+        {
+            var t = await _mediator.Send(postUser);
+            return Ok(t);
+        }
+
+        [HttpDelete]
+
+        public async ValueTask<IActionResult> DeleteCard(DeleteCardCommand postUser)
+        {
+            var t = await _mediator.Send(postUser);
+            return Ok(t);
         }
 
     }
